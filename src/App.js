@@ -44,7 +44,7 @@ const MyConfetti = ({ hidden = false }) => {
 export default function App() {
   const [hidden, setHidden] = useState(true);
 
-  const onSubmit = () => setHidden(false);
+  const onSubmit = () => setHidden();
   const enterSubmission = (event) => {
     if (event.key === "Enter") {
       setHidden();
